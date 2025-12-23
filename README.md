@@ -80,7 +80,17 @@ A clean, analysis-ready dataset suitable for:
 
 Although experimental modeling code exists in the notebook, **model outputs are not used for insights or conclusions**.
 
----
+📊 Model Performance Summary
+<img width="934" height="422" alt="image" src="https://github.com/user-attachments/assets/5834cf1e-807a-4081-abe1-5eeeb8c650c8" />
+
+🔎Interpretation
+Stacking outperforms all other models, showing the value of combining multiple learners.
+
+Random Forest is a solid single‑model choice, but stacking reduces RMSE by ~10%.
+
+AdaBoost struggles compared to Random Forest, likely due to sensitivity to variance in sales data.
+
+Decision Tree alone is not sufficient — ensemble methods clearly improve predictive accuracy.
 
 ## 5️⃣ Evaluation & Key Insights
 
@@ -122,7 +132,40 @@ Although experimental modeling code exists in the notebook, **model outputs are 
 - Dataset well-understood and analysis-ready
 - Foundation for future advanced analytics (optional)
 
----
+📑 Assignment Summary – Rossmann Sales Prediction
+🏆 Best Performing Model
+Stacking Ensemble delivered the most accurate forecasts.
+
+RMSE: 1196.40
+
+MAE: 821.33
+
+This demonstrates the power of combining multiple models to reduce error and improve reliability.
+
+🔑 Key Features Driving Sales (Random Forest Importance)
+Customers: 0.911 → Strongest predictor of sales volume.
+
+Recency: 0.044 → Recent purchase behavior influences demand.
+
+Promo: 0.027 → Promotional campaigns boost short‑term sales.
+
+DayOfWeek: 0.014 → Weekly shopping patterns affect store traffic.
+
+SchoolHoliday: 0.004 → Minor impact, but relevant for family‑oriented purchases.
+
+⚙️ Data Preprocessing
+Original dataset shape: (978,389 × 8 features)
+
+Final dataset shape: (978,389 × 7 features) after cleaning and feature selection.
+
+Training set size: 684,872 samples
+
+Test set size: 293,517 samples
+
+📊 Model Performance Ranking
+
+<img width="906" height="316" alt="image" src="https://github.com/user-attachments/assets/11854347-7590-490c-a780-47fe8a886c0a" />
+
 
 ## 🧰 Tech Stack
 - Python
@@ -143,8 +186,4 @@ Rossmann-Sales-Analysis/
 
 ---
 
-## 🎯 Why This Project Is Portfolio-Ready
-✔ CRISP-DM aligned  
-✔ EDA-focused and honest  
-✔ Business-oriented insights  
-✔ Interview- and assignment-safe  
+
